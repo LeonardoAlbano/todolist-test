@@ -2,6 +2,7 @@ import styles from './App.module.css'
 import { Button } from './components/Button'
 import { Header } from './components/Header'
 import { Input } from './components/Input'
+import { HeaderTaskList } from './components/tasklist/Header'
 
 export function Home() {
   return (
@@ -15,6 +16,8 @@ export function Home() {
         </div>
 
         <div>
+          <HeaderTaskList />
+
           <div />
         </div>
       </section>
