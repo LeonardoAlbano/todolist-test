@@ -4,6 +4,8 @@
 
     align-items: center;
     justify-content: space-between;
+
+    animation: slideDown 1.8s ease forwards;
 }
 
 .container aside {
@@ -34,4 +36,16 @@
 
     color: var(--gray-200);
     background-color: var(--gray-400);
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    -100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }

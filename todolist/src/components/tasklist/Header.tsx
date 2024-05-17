@@ -20,8 +20,10 @@ export function HeaderTaskList({
         <p>Concluídas</p>
         <span>
           {taskTracker === 0
-            ? taskTracker
-            : `${taskTrackerChecked} de ${taskTracker}`}
+            ? // Se não há tarefas, mostra 0
+              taskTracker
+            : // Caso contrário, mostra tarefas concluídas de total
+              `${taskTrackerChecked} de ${taskTracker}`}{' '}
         </span>
       </aside>
     </header>

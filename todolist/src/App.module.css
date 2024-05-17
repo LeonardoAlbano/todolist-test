@@ -21,6 +21,18 @@
     animation: slideDown 1.2s ease forwards;
 }
 
+.tasksList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .tasksList > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
 @keyframes slideDown {
     0% {
         transform: translateY(-100%);

@@ -6,7 +6,8 @@
 
     padding: 5rem 0.625rem;
 
-    background-color: var(--gray-700);
+    background: rgb(130,132,250);
+background: linear-gradient(152deg, rgba(130,132,250,1) 43%, rgba(78,168,211,1) 88%);
 }
 
 .logo{
