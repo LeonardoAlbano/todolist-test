@@ -15,23 +15,27 @@ Liste de pré-requisitos necessários para que o projeto seja executado com suce
 
 Node.js - Versão v18.18.0 ou superior.
 npm - Versão 9.5.1 ou superior.
+
 🛠️ Instalação
 Siga os passos abaixo para instalar e configurar a aplicação em um ambiente local:
 
 📥 Clone o repositório:
 
 - git clone https://github.com/LeonardoAlbano/todolist-test.git
+
 ou a CLI 
 
 gh repo clone git@github.com:LeonardoAlbano/todolist-test.git
+
 📂 Navegue para o diretório do projeto:
 
-cd. /albano-race-parts-web
+cd. /todolist-test
 📦 Instale as dependências:
 
 npm install
 ou
 pnpm i
+
 ▶️ Inicie o servidor:
 
 pnpm run dev
@@ -39,8 +43,8 @@ pnpm run dev
 💻 Tecnologias Utilizadas
 Foram utilizado as seguintes tecnologias
 
-React + Vite
-TypeScript
-React-icons
-phosphoricons
-@rocketseat/eslint
+- React + Vite
+- TypeScript
+- React-icons
+- phosphoricons
+- @rocketseat/eslint
