@@ -16,9 +16,11 @@ export interface ITask {
 }
 
 export function Home() {
+  // Inicialização do estado
   const [tasks, setTask] = useState<ITask[]>([])
   const [inputValue, setInputValue] = useState('')
 
+  // Função para contar tarefas marcadas
   const taskTrackerChecked = tasks.reduce((prevValue, currentTask) => {
     if (currentTask.isChecked) {
       return prevValue + 1
@@ -27,6 +29,7 @@ export function Home() {
     return prevValue
   }, 0)
 
+  // Função para adicionar uma nova tarefa
   function handleAddTask() {
     if (!inputValue) {
       return
@@ -42,6 +45,7 @@ export function Home() {
     setInputValue('')
   }
 
+  // Função para remover uma tarefa
   function handleRemoveTask(id: number) {
     const filteredTask = tasks.filter((task) => task.id !== id)
 
@@ -52,6 +56,7 @@ export function Home() {
     setTask(filteredTask)
   }
 
+  // Função para alternar o status da tarefa (marcado/desmarcado)
   function handleToggleTask({ id, value }: { id: number; value: boolean }) {
     const updateTasks = tasks.map((task) => {
       if (task.id === id) {
